@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Profile Form</title>
+    <meta charset="UTF-8">
+
+    <style>
+       
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FFBCCD, #FFF5F7);
+    margin: 0;
+    padding: 40px;
+    color: #573744;
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(169, 87, 115, 0.15);
+    border: 1px solid #F7DCE5;
+}
+
+h1 {
+    text-align: center;
+    color: #A95773;
+}
+
+p {
+    color: #986879;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #754052;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    border: 1px solid #F2C8D5;
+    border-radius: 8px;
+    background-color: #FFF8FA;
+    color: #573744;
+    font-family: Arial, sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #D9829B;
+    box-shadow: 0 0 0 3px rgba(255, 188, 205, 0.35);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    background-color: #A95773;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #85415B;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Personal Profile</h1>
+        <p style="text-align:center;">
+            Please fill in your personal information below.
+        </p>
+
+        <form action="NewServlet" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" required>
+
+            <label for="programme">Programme:</label>
+            <input type="text" id="programme" name="programme" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" required>
+
+            <label for="introduction">Short Self-Introduction:</label>
+            <textarea id="introduction" name="introduction"
+                      required></textarea>
+
+            <button type="submit">Submit Profile</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
